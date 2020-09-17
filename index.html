@@ -7,7 +7,9 @@
     <title>MyPortfolioWebpage</title>
 </head>
 <body>
+    
     <!-- HEADER -->
+
     <header>
         <nav id="navbar">
             <ul>
@@ -25,53 +27,89 @@
     </header>
 
     <!-- WELCOME SECTION -->
+
     <section id="welcome-section">
         <h1>Hey! I am Marcos</h1>
         <p>A web developer, and in his spare time a game creator.</p>
     </section>
 
     <!-- PROJECTS SECTION -->
+
     <section id="projects">
-        <h2>Some of my work.</h2>
-        <div class="project-grid">
+        <div class="section-header">
+            <h2>Some of my Works</h2>
+        </div>
+
+        <div id="project-grid">
             <a href="https://github.com/Markimg22/FreeCodeCamp-TributePage" target="_blank">
-                <img src="https://github.com/Markimg22/FreeCodeCamp-TributePage/blob/master/image-layout.PNG?raw=true" alt="project" class="project-image">
-                <p class="project-title">TributePage</p>
+                <img src="https://github.com/Markimg22/FreeCodeCamp-TributePage/blob/master/image-layout.PNG?raw=true" alt="project" class="project-image"/>
+                <p>
+                    <span class="code">&lt;</span>
+                        TributePage
+                    <span class="code">&#47;&gt;</span>
+                </p>
             </a>
-        </div>
-        <div class="project-grid">
             <a href="https://github.com/Markimg22/FreeCodeCamp-SurveyForm" target="_blank">
-                <img src="https://github.com/Markimg22/FreeCodeCamp-SurveyForm/blob/master/image-layout.PNG?raw=true" alt="project" class="project-image">
-                <p class="project-title">SurveyForm</p>
+                <img src="https://github.com/Markimg22/FreeCodeCamp-SurveyForm/blob/master/image-layout.PNG?raw=true" alt="project" class="project-image"/>
+                <p>
+                    <span class="code">&lt;</span>
+                        SurveyForm
+                    <span class="code">&#47;&gt;</span>
+                </p>
             </a>
-        </div>
-        <div class="project-grid">
             <a href="https://github.com/Markimg22/FreeCodeCamp-LandingPage" target="_blank">
+                <img src="https://github.com/Markimg22/FreeCodeCamp-LandingPage/blob/master/image-layout.PNG?raw=true" alt="project" class="project-image">
+                <p>
+                    <span class="code">&lt;</span>
+                        LandingPage
+                    <span class="code">&#47;&gt;</span>
+                </p>
+            </a>
+            <a href="https://github.com/Markimg22/FreeCodeCamp-ThechnicalDocumentPage" target="_blank">
                 <img src="https://github.com/Markimg22/FreeCodeCamp-ThechnicalDocumentPage/blob/master/image-layout.PNG?raw=true" alt="project" class="project-image">
-                <p class="project-title">ProductLandingPage</p>
+                <p>
+                    <span class="code">&lt;</span>
+                        DocumentationPage
+                    <span class="code">&#47;&gt;</span>
+                </p>
             </a>
         </div>
-        <div class="project-grid">
-            <a href="https://github.com/Markimg22/FreeCodeCamp-ThechnicalDocumentPage" target="_blank">
-                <img src="https://github.com/Markimg22/FreeCodeCamp-LandingPage/blob/master/image-layout.PNG?raw=true" alt="project" class="project-image">
-                <p class="project-title">TechnicalDocumentationPage</p>
+            
+        <a href="https://github.com/Markimg22"  target="_blank" id="btn-show-all">
+            Show all
+        </a>
+    </section>
+
+    <!-- CONTACT SECTION -->
+
+    <section id="contact">
+        <div class="section-header">
+            <h2>Let's work together...</h2>
+            <p>How do you like tea?</p>
+        </div>
+
+        <div id="contact-links">
+            <a href="https://github.com/Markimg22" target="_blank" class="btn-contact-link">
+                <img src="data:image/svg+xml;base64,PHN2ZyBpZD0icmVndWxhciIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMjQgMjQiIGhlaWdodD0iNTEyIiB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSI1MTIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0ibS4xODQgMTAuNDYyYy0uNzc5IDQuOTA2IDEuNDAxIDEwLjgyMyA4LjEyMyAxMy4wMDYuMTIuMDIyLjIzMS4wMzIuMzM1LjAzMi43ODIgMCAxLjMyLS41ODIgMS4zMi0xLjMtLjA5Ny0uNTIzLjM4My0yLjY0Mi0uOTItMi4zNTctMi41MTkuNTM2LTIuODIxLS44NzEtMy4yMDUtMS42MDcgMS4wODYgMS4zOTQgMi43MTggMS4zNTkgMy45NDkuODE5LjY4My0uMy4zMjYtMS4wNjQuNjUtMS4zNDMuNDk2LS40MjYuMjQ0LTEuMjQzLS40MDctMS4zMTQtMi4zMTQtLjI1NS00LjQ1Ny0xLjAwMS00LjQ1Ny00LjcwMiAwLTIuMTY4IDEuNTA1LTIuMzYyIDEuMDktMy4yNjktLjAxNS0uMDMzLS4zMzMtLjc1NC0uMDQ1LTEuODQ5IDEuNDE5LjI2MiAyLjA3MiAxLjI4IDIuNzUzIDEuMDk3IDEuNjg3LS40NiAzLjU0NC0uNDYgNS4yMyAwIC43MDQuMTg5IDEuMjA3LS44MDEgMi43MzgtMS4xMDMuNDQxIDEuNjU0LS40NzMgMi4wNTguMTAzIDIuNjc3LjYzMi42OC45NTMgMS41MDMuOTUzIDIuNDQ3IDAgNS41NjQtNC43MTcgMy45NTctNS4xMDEgNS4yMi0uMDg4LjI4OC4wMDUuNTk5LjIzNS43OTIuNjEuNTEzLjUzIDEuODMuNDY1IDIuODg5LS4wNjcgMS4wOTgtLjEyNSAyLjA0NS40ODIgMi41NzkuMjE0LjE5LjU5NS4zOTMgMS4yODQuMjUzIDYuNjM0LTIuMTMxIDguODMtOC4wMjIgOC4wNjMtMTIuOTE3LTIuMDk2LTEzLjM2OC0yMS41MjYtMTMuMzUyLTIzLjYzOC0uMDV6bTguMjcgMTAuOTc4LjAwNC41MDVjLS41MjMtLjE4MS0xLjAxNS0uMzktMS40NzUtLjYyMy40MjUuMTA5LjkxMy4xNTYgMS40NzEuMTE4em0uMzctMy43Yy0uMDA1LjAyNi0uMDEuMDUzLS4wMTUuMDgtLjg1My4yNTItMS41MDkuMDAxLTEuOTU3LS43NTIgMC0uMDAxIDAtLjAwMS0uMDAxLS4wMDIuNjguMzY0IDEuMzgxLjU2IDEuOTczLjY3NHptMy4xNzYtMTUuNzRjMTEuODMzIDAgMTQuNTAyIDE2LjI2NyAzLjQ2OSAxOS45NDEtLjAzOC0uMjk3LS4wMDMtLjg1Ny4wMjEtMS4yNTIuMDU4LS45NTEuMTI2LTIuMDU5LS4yMTMtMi45ODUgNS4wODgtMS4wNTkgNS41MTMtNi42NDYgMy41NTQtOS4xMzUuMjQzLS45NTIuMTQ1LTMuMTg5LS43MjktMy40NjMtLjIwNi0uMDY1LTEuMzA1LS4zMDQtMy40MzcgMS4wMzctMS43NDEtLjQxNi0zLjYyLS40MTctNS4zNjEgMC0xLjA2NC0uNjY3LTMuNDYyLTEuNzUyLTMuOTIyLS42LS41MzQgMS4zNDItLjQwNyAyLjQyNy0uMjQ4IDMuMDMtMS43MzkgMi4yMDQtMS4yMTggNS44OTQuNTM0IDcuNjI2LS45OTMtLjQ3NS0yLjM2MS0uNjM3LTIuNjU2LjMxNC0uMzIzIDEuMDM3LjkxMi45MTEgMS42NzkgMi44MDQuMDczLjIzNi4yMDguNTEzLjQxNS43ODgtNi44MTEtNS41NjUtMy41MjUtMTguMTA1IDYuODk0LTE4LjEwNXoiLz48L3N2Zz4=" /> 
+                GitHub
+            </a>
+            <a href="https://twitter.com/markimg22" target="_blank" class="btn-contact-link">
+                <img src="data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIC00NyA1MTIuMDAwMDQgNTEyIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Im01MTIgNTUuOTY0ODQ0Yy0zMi4yMDcwMzEgMS40ODQzNzUtMzEuNTAzOTA2IDEuMzYzMjgxLTM1LjE0NDUzMSAxLjY2Nzk2OGwxOS4wNzQyMTktNTQuNDcyNjU2cy01OS41MzkwNjMgMjEuOTAyMzQ0LTc0LjYzMjgxMyAyNS44MjAzMTNjLTM5LjY0MDYyNS0zNS42Mjg5MDctOTguNTYyNS0zNy4yMDMxMjUtMTQwLjY4NzUtMTEuMzEyNS0zNC40OTYwOTQgMjEuMjA3MDMxLTUzLjAxMTcxOSA1Ny42MjUtNDYuODM1OTM3IDEwMC4xOTE0MDYtNjcuMTM2NzE5LTkuMzE2NDA2LTEyMy43MDMxMjYtNDEuMTQwNjI1LTE2OC4zNjMyODItOTQuNzg5MDYzbC0xNC4xMjUtMTYuOTY0ODQzLTEwLjU1NDY4NyAxOS4zODI4MTJjLTEzLjMzOTg0NCAyNC40OTIxODgtMTcuNzY5NTMxIDUyLjQ5NjA5NC0xMi40NzY1NjMgNzguODUxNTYzIDIuMTcxODc1IDEwLjgxMjUgNS44NjMyODIgMjEuMTI1IDEwLjk3NjU2MyAzMC43ODEyNWwtMTIuMTE3MTg4LTQuNjk1MzEzLTEuNDM3NSAyMC4yNDYwOTRjLTEuNDU3MDMxIDIwLjU2NjQwNiA1LjM5MDYyNSA0NC41NzQyMTkgMTguMzIwMzEzIDY0LjIxNDg0NCAzLjY0MDYyNSA1LjUzMTI1IDguMzI4MTI1IDExLjYwNTQ2OSAxNC4yNjk1MzEgMTcuNTk3NjU2bC02LjI2MTcxOS0uOTYwOTM3IDcuNjQwNjI1IDIzLjE5OTIxOGMxMC4wNDI5NjkgMzAuNDgwNDY5IDMwLjkwMjM0NCA1NC4wNjI1IDU3Ljk3MjY1NyA2Ny4xNzE4NzUtMjcuMDM1MTU3IDExLjQ3MjY1Ny00OC44NzUgMTguNzkyOTY5LTg0Ljc3MzQzOCAzMC42MDE1NjNsLTMyLjg0Mzc1IDEwLjc5Njg3NSAzMC4zMzU5MzggMTYuNTg1OTM3YzExLjU2NjQwNiA2LjMyNDIxOSA1Mi40Mzc1IDI3LjQ0NTMxMyA5Mi44MjAzMTIgMzMuNzgxMjUgODkuNzY1NjI1IDE0LjA3ODEyNSAxOTAuODMyMDMxIDIuNjEzMjgyIDI1OC44NzEwOTQtNTguNjY0MDYyIDU3LjMwODU5NC01MS42MTMyODIgNzYuMTEzMjgxLTEyNS4wMzEyNSA3Mi4yMDcwMzEtMjAxLjQzMzU5NC0uNTg5ODQ0LTExLjU2NjQwNiAyLjU3ODEyNS0yMi42MDU0NjkgOC45MjE4NzUtMzEuMDc4MTI1IDEyLjcwNzAzMS0xNi45NjQ4NDQgNDguNzY1NjI1LTY2LjQwNjI1IDQ4Ljg0Mzc1LTY2LjUxOTUzMXptLTcyLjgzMjAzMSA0OC41NTA3ODFjLTEwLjUzNTE1NyAxNC4wNjY0MDYtMTUuODEyNSAzMi4wMzEyNS0xNC44NjcxODggNTAuNTc4MTI1IDMuOTQxNDA3IDc3LjA2NjQwNi0xNy4wMjczNDMgMTM2LjgzMjAzMS02Mi4zMjgxMjUgMTc3LjYyODkwNi01Mi45MTc5NjggNDcuNjYwMTU2LTEzOC4yNzM0MzcgNjYuMzY3MTg4LTIzNC4xNzE4NzUgNTEuMzI0MjE5LTE3LjM2NzE4Ny0yLjcyMjY1Ni0zNS4zMTY0MDYtOC44MjAzMTMtNTAuMTcxODc1LTE0LjkxMDE1NiAzMC4wOTc2NTYtMTAuMzU1NDY5IDUzLjMzOTg0NC0xOS41ODU5MzggOTAuODc1LTM3LjM1MTU2M2w1Mi4zOTg0MzgtMjQuODAwNzgxLTU3Ljg1MTU2My0zLjcwMzEyNWMtMjcuNzEwOTM3LTEuNzczNDM4LTUwLjc4NTE1Ni0xNS4yMDMxMjUtNjQuOTY4NzUtMzcuMDA3ODEyIDcuNTMxMjUtLjQzNzUgMTQuNzkyOTY5LTEuNjU2MjUgMjIuMDIzNDM4LTMuNjcxODc2bDU1LjE3NTc4MS0xNS4zNjcxODctNTUuNjM2NzE5LTEzLjYyNWMtMjcuMDM1MTU2LTYuNjIxMDk0LTQyLjQ0NTMxMi0yMi43OTY4NzUtNTAuNjEzMjgxLTM1LjIwMzEyNS01LjM2MzI4MS04LjE1MjM0NC04Ljg2NzE4OC0xNi41MDM5MDYtMTAuOTY4NzUtMjQuMjAzMTI1IDUuNTc4MTI1IDEuNDk2MDk0IDEyLjA4MjAzMSAyLjU2MjUgMjIuNTcwMzEyIDMuNjAxNTYzbDUxLjQ5NjA5NCA1LjA5Mzc1LTQwLjgwMDc4MS0zMS44MjgxMjZjLTI5LjM5ODQzNy0yMi45Mjk2ODctNDEuMTc5Njg3LTU3LjM3ODkwNi0zMi41NDI5NjktOTAuNDk2MDkzIDkxLjc1IDk1LjE2NDA2MiAxOTkuNDc2NTYzIDg4LjAxMTcxOSAyMTAuMzIwMzEzIDkwLjUyNzM0My0yLjM4NjcxOS0yMy4xODM1OTMtMi40NDkyMTktMjMuMjM4MjgxLTMuMDc0MjE5LTI1LjQ0NTMxMi0xMy44ODY3MTktNDkuMDg5ODQ0IDE2LjU0Njg3NS03NC4wMTU2MjUgMzAuMjczNDM4LTgyLjQ1MzEyNSAyOC42NzE4NzQtMTcuNjIxMDk0IDc0LjE4MzU5My0yMC4yNzczNDQgMTA1LjcwNzAzMSA4Ljc1MzkwNiA2LjgwODU5MyA2LjI2NTYyNSAxNi4wMTU2MjUgOC43MzA0NjkgMjQuNjMyODEyIDYuNTg5ODQ0IDcuNzM0Mzc1LTEuOTIxODc1IDE0LjA4MjAzMS0zLjk1NzAzMSAyMC4yOTY4NzUtNi4xNzE4NzVsLTEyLjkzNzUgMzYuOTQ1MzEyIDE2LjUxNTYyNS4wMTE3MTljLTMuMTE3MTg3IDQuMTc5Njg4LTYuODU1NDY5IDkuMTgzNTk0LTExLjM1MTU2MiAxNS4xODM1OTR6bTAgMCIvPjwvc3ZnPg==" />
+                Twitter
+            </a>
+            <a href="marquim.net.221200@hotmail.com" class="btn-contact-link">
+                <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgNTEyIDUxMiIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNTEyIDUxMjsiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPGc+DQoJPGc+DQoJCTxwYXRoIGQ9Ik00NjQsNjRINDhDMjEuNDksNjQsMCw4NS40OSwwLDExMnYyODhjMCwyNi41MSwyMS40OSw0OCw0OCw0OGg0MTZjMjYuNTEsMCw0OC0yMS40OSw0OC00OFYxMTINCgkJCUM1MTIsODUuNDksNDkwLjUxLDY0LDQ2NCw2NHogTTQ1Mi40OCw5NkwyNTYsMjM2LjMyTDU5LjUyLDk2SDQ1Mi40OHogTTQ4MCw0MDBjMCw4LjgzNy03LjE2MywxNi0xNiwxNkg0OA0KCQkJYy04LjgzNywwLTE2LTcuMTYzLTE2LTE2VjExNS42OGwyMTQuNzIsMTUzLjI4YzUuNTU1LDMuOTU1LDEzLjAwNSwzLjk1NSwxOC41NiwwTDQ4MCwxMTUuNjhWNDAweiIvPg0KCTwvZz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjwvc3ZnPg0K" />
+                Email
             </a>
         </div>
     </section>
 
-    <!-- CONTACT SECTION -->
-    <section id="contact">
-        <div id="contact-header">
-            <h2></h2>
-        </div>
-        <div id="contact-link">
-            <a href="https://github.com/Markimg22" class="btn-contact-link" target="_blank">
-                <img src="https://www.flaticon.com/svg/static/icons/svg/733/733609.svg" alt="icon-github"> GitHub
-            </a>
-            <a href="https://twitter.com/markimg22" class="btn-contact-link" target="_blank">
-                <img src="https://www.flaticon.com/svg/static/icons/svg/733/733635.svg" alt="icon-twitter"> Twitter
-            </a>
-        </div>
-    </section>
+    <!-- FOOTER -->
+    <footer>
+        <p>
+            &copy; Marcos Campos
+        </p>
+    </footer>
+
 </body>
 </html>

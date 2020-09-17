@@ -1,25 +1,22 @@
-/* BODY */
+/* GENERAL */
 
-*
+:root
+{
+    --color-red: rgb(196, 26, 26);
+    --color-black-alpha: rgba(0, 0, 0, 0.5);
+    --color-gray: rgb(66, 66, 66);
+    --color-blue: rgb(27, 27, 99);
+    --color-button: rgb(110, 109, 109);
+}
+
+body
 {
     margin: 0;
     padding: 0;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 1rem;
+    background-color: black;
     scroll-behavior: smooth;
-}
-
-img
-{
-    max-width: 100%;
-    width: 50%;
-    display: block;
-    border: 1px solid black;
-}
-
-a
-{
-    text-decoration: none;
+    color: white;
 }
 
 ul
@@ -27,43 +24,56 @@ ul
     list-style: none;
 }
 
+a
+{
+    text-decoration: none;
+    color: white;
+}
+
+p
+{
+    font-style: italic;
+}
+
+h1, h2
+{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+img
+{
+    display: block;
+    max-width: 100%;
+}
+
 /* HEADER */
 
 header
 {
     position: fixed;
-    background-color: rgba(255, 43, 43);
-    padding: 1rem;
+    background-color: var( --color-red );
+    width: 100vw;
+    font-weight: bold;
     border-bottom: 2px solid black;
-    width: 100%;
-}
-
-#navbar
-{
-    display: flex;
-    justify-content: flex-end;
-    top: 0;
-    left: 0;
 }
 
 #navbar ul
 {
     display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
     margin-right: 2rem;
 }
 
 #navbar a
 {
-    display: block;
-    color: white;
-    font-weight: bold;
-    margin-top: 0 ;
     padding: 1rem;
+    transition: background 0.3s ease-out;
 }
 
 #navbar a:hover
 {
-    background-color: rgba(61, 61, 61, 0.295);
+    background-color: var( --color-black-alpha );
 }
 
 /* WELCOME SECTION */
@@ -74,37 +84,143 @@ header
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #303841;
+    background-color: var( --color-gray );
     height: 100vh;
+    line-height: 0;
 }
 
-h1, h2
+h1
 {
-    font-size: 3rem;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: red;
-}
-
-#welcome-section p
-{
-    font-size: 1.5rem;
-    font-style: italic;
-    color: white;
+    font-size: 8vw;
+    color: var( --color-blue );
 }
 
 /* PROJECTS */
 
 #projects
 {
-    background-color: #45567d;
+    background-color: var( --color-blue );
+    padding: 4rem 0;
     text-align: center;
-    padding: 10rem 2rem;
 }
 
-h2
+.section-header
 {
-    color: white;
+    font-size: 2rem;
+    line-height: 0;
+    margin-bottom: 3rem;
 }
 
+#project-grid
+{
+    display: grid;
+    grid-template-columns: repeat( 2, minmax(320px, 1fr) );
+    grid-gap: 4rem;
+    width: 70%;
+    margin: 0 auto;
+    max-width: 100%;
 
-    
+    font-weight: bold;
+}
+
+@media( max-width: 900px )
+{
+    #project-grid
+    {
+        grid-template-columns: repeat( auto-fit, minmax(320px, 1fr) );
+    }
+}
+
+#project-grid a
+{
+    background-color: var( --color-gray );
+    border-radius: 5px;
+    box-shadow: 1px 1px 4px var( --color-black-alpha );
+}
+
+.project-image
+{
+    height: calc( 100% - 5rem );
+    width: 100%;
+    object-fit: cover;
+}
+
+.code
+{
+    color: var( --color-gray );
+    transition: color 0.3s ease-out;
+}
+
+#projects a:hover .code
+{
+    color: orangered;
+}
+
+#btn-show-all
+{
+    display: inline-block;
+    background-color: var( --color-black-alpha );
+    padding: 1rem 3rem;
+    margin-top: 4rem;
+    font-weight: bold;
+    font-size: 1.4rem;
+    border-radius: 10px;
+
+    transition: background 0.3s ease-out;
+}
+
+#btn-show-all:hover
+{
+    background-color: rgba(255, 255, 255, 0.288);
+}
+
+/* CONTACT SECTION */
+
+#contact
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding-top: 2rem;
+    background-color: rgba(241, 179, 179, 0.61);
+}
+
+.section-header p
+{
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+}
+/* 
+#contact-links
+{
+    display: inline;
+} */
+
+#contact-links img
+{
+    width: 5%;
+    margin-right: 2rem;
+}
+
+#contact-links a
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: black;
+}
+
+#contact-links a:hover
+{
+    font-weight: bold;
+}
+
+/* FOOTER */
+
+footer
+{
+    text-align: center;
+}
